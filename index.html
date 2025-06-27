@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissor Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css\style.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="main-container">
+      <p class="main-title">Rock Paper Scissor Game</p>
+        <section class="result">
+            <div class="main-result">
+              <div class="result-container">
+                <img class="image-result" id="youImage" src="images/unknow.png" alt="You"/>
+                <p class="text-you">You</p>
+              </div>
+
+              <div class="versus-container">
+                <p class="versus">Vs</p>
+              </div>
+
+              <div class="result-container">
+                <img class="image-result" id="computerImage" src="images/unknow.png" alt="Computer"/>
+                <p class="text-computer">Computer</p>
+              </div>
+            </div>
+        </section>
+
+        <p class="sub-title">Pick one picture below !</p>
+
+        <section class="main-images">
+          <div class="image-pick-container">
+            <img class="image-pick" onclick="rock()" src="images/Rock.png" alt="Rock"/>
+          </div>
+
+          <div class="image-pick-container">
+            <img class="image-pick" onclick="paper()" src="images/Paper.png" alt="Paper"/>
+          </div>
+
+          <div class="image-pick-container">
+            <img class="image-pick" onclick="scissor()" src="images/Scicross.png" alt="Scissor"/>
+          </div>
+
+          
+        </section>
+        <div class="score-container">
+          <div class="footer-section">
+            <section class="score">
+              <div class="score-group">
+                <span>Win:</span>
+                <p id="winScore">0</p>
+              </div>
+
+              <div class="score-group">
+                <span>Lose:</span>
+                <p id="loseScore">0</p>
+              </div>
+
+            </section>
+              <div class="result-container-text">
+                <div class="result-container-main">
+                  <p class="result-text"> Result : &nbsp; </p>
+                  <p class="result-game" id="outputResult"></p>
+                </div>
+                <button class="button-reset" onclick="buttonReset()">Reset</button>
+              </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript\script.js"></script>
+</body>
